@@ -10,8 +10,7 @@ requires-python = ">=3.13"
 dependencies = []
 
 [project.scripts]
-dataset-users = "ece_2026_bigdata.dataset_users:main"
-dataset-orders = "ece_2026_bigdata.dataset_orders:main"
+ece-2026-bigdata = "ece_2026_bigdata:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
