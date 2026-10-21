@@ -7,6 +7,11 @@ models:
         data_tests:
           - unique
           - not_null
+      - name: username_normalized
+        description: Username without leading and trailing spaces, in lowercase.
+        data_tests:
+          - unique
+          - not_null
       - name: email
         data_tests:
           - unique
