@@ -12,6 +12,14 @@ models:
         data_tests:
           - unique
           - not_null
+      - name: birthdate_is_valid
+        description: True if the original birthdate is before the first order of the user, otherwise the birthdate is set to NULL.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [true, false]
+                quote: false
       - name: email
         data_tests:
           - unique
